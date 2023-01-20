@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="lib/jquery.js"></script>
+</head>
+
+<body>
+
+  <form action="/login" target="_blank" method="post" id="f1">
+    <input type="text" name="email_or_mobile" />
+    <input type="password" name="password" />
+    <button type="submit">提交</button>
+  </form>
+<script>
+	$(function(){
+    // 第一种方式
+		// $('#f1').submit(function(){
+    //   alert('表单')
+    // })
+    	$('#f1').on('submit',function(){
+      alert('表单2')
+    })
+	})
+</script>
+
+</body>
+
+</html>

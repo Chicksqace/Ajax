@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var str='<html>我是{{name}}</html>'
+    var pattern=/{{([a-zA-Z]+)}}/
+    // 后面加 加号的意思为任意多个字符
+    // ()提取分组
+    // 加了()表示将内容提取出来，没加就只有匹配，没有提取
+    var result=pattern.exec(str)
+    console.log(result);
+    
+  </script>
+</body>
+
+</html>

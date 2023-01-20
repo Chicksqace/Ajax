@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var str = '<div>我是{{name}}</div>'
+    var pattern = /{{([a-zA-Z]+)}}/
+    var patternResult=pattern.exec(str)
+    // console.log(patternResult);
+    // patternResult 是一个数组，[0]是匹配到的'{{name}}'，[1]是提取出来的'name'。之后对str进行了替换。
+    str=str.replace(patternResult[0],22222)
+    console.log(str);
+  </script>
+</body>
+
+</html>
